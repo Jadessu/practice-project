@@ -1,0 +1,66 @@
+.product-banner{
+     background: 
+     linear-gradient(to bottom, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.63)),
+    url('https://images.unsplash.com/photo-1616065787198-a41b9ab94ef2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  /* background-position: center; */
+  height: 600px;
+  width: 100%;
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; */
+}
+
+
+/* Desktop screen Sizes */
+@media only screen and (min-width: 768px) {
+
+	.product-banner{
+        display: flex;
+        justify-content: center;
+        align-items:flex-end;
+       
+    }
+    .product-banner-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 8rem;
+        
+    }
+    .banner-form {
+  display: flex;
+  flex-direction: row;
+ 
+}
+.search-field {
+  width: 100%;
+  padding: 10px 35px 10px 15px;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+  background: transparent;
+  outline: 2px solid white;
+  color: white;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -33px;
+  align-items: center;
+}
+
+.search-button i {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  color: white;
+  align-items: center;
+}
+
+    
+	
+
+}

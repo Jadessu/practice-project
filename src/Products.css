@@ -1,0 +1,33 @@
+
+
+.products-container{
+    display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	text-align: center;
+    justify-content: center;
+}
+[class*="col-product"]{
+	margin-left: 4%;
+	margin-top: 4%;
+}
+
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 480px)  {
+.col-product{
+	flex: 0 0 44%;
+}
+
+}
+/* Desktop screen Sizes */
+@media only screen and (min-width: 768px) {
+	.col-product{
+		flex: 0 0 20%
+	}
+	.products-container{
+        margin: 0 9rem;
+    }
+
+	
+
+}

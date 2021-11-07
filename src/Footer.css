@@ -1,0 +1,94 @@
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem 0;
+}
+.footer-first{
+    display: flex;
+    flex-direction: column;
+}
+.footer-first .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-first .icons i{
+    margin: 0 0.5rem;
+}
+
+.footer-second{
+    border-left: 2px solid green;
+    display: flex;
+    align-items: center;
+   
+}
+.footer-second ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    /* height: 100% */
+}
+.footer-second ul li  {
+    display: flex;
+align-items: center;
+margin: 0.3rem;
+}
+
+.footer-second ul li a{
+    text-decoration: underline;
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer-third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-third form {
+	position:relative;
+	
+	background: transparent;
+	border-radius:50px;
+	overflow:hidden;
+	outline: 1px solid white;
+    width: 80%;
+    
+}
+
+.footer-third .signup {
+	position:absolute;
+	top:0;
+	right:0;
+	text-transform:uppercase;
+	height:100%;
+	padding:15px 15px 5px 15px;
+	border-left: 1px solid white;
+	font-weight:700;
+	background: transparent;
+	color:#fff;
+	letter-spacing:1.5px;
+	transition: all ease 0.5s;
+	cursor:pointer;
+	font-size:13px;
+	/* width:25%; */
+}
+
+
+
+
+
+
+.footer-third input {
+	padding:14px 2px;
+	width:90%;
+	margin:0 5%;
+	font-size:17px;
+	border-radius:50px;
+	border:none;
+	background:transparent;
+	outline:none!important;
+}
