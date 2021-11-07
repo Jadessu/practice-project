@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Footer.css"
+import Payment from './Payment';
 
 function Footer() {
     return (
@@ -42,6 +43,7 @@ function Footer() {
             </form>
           </div>
         </footer>
+        <Payment/>
       </div>
     );
 }

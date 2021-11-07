@@ -1,26 +1,28 @@
 import './App.css';
-import Navbar from './Navbar';
-import Banner from './Banner';
-import Categories from './Categories';
-import SecondaryBanner from './SecondaryBanner';
-import Footer from './Footer';
-import Payment from './Payment';
-import Product from './Product';
-import Products from './Products';
-import ProductBanner from './ProductBanner';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar/Navbar"
+import Landing from './Pages/Landing/Landing';
+import Shop from './Pages/Shop/Shop';
+
+
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
-     {/* <Banner/>
-     <Categories/>
-     <SecondaryBanner/> */}
-     {/* <Product/> */}
-      {/* <ProductBanner/> */}
-     {/* <Products/> */}
-     <Footer/>
-     <Payment/> 
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Landing/>}/>
+            
+        </Routes>
+       
+        <Routes>
+          <Route exact path="/shop" element={<Shop/>}/>
+            
+        </Routes>
+       
+      </div>
+    </Router>
   );
 }
 
